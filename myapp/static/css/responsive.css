@@ -1,0 +1,212 @@
+.mobile-block {
+  display: none; }
+
+@media (max-width: 1200px) {
+        
+}
+
+@media (max-width: 992px) {
+/*
+    
+*/
+}
+
+@media all and (max-width: 768px) {
+    .header-acc-list {
+        margin-top: 22px;
+    }
+    .navbar-collapse {
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        width: calc(100% - 30px);
+        top: 58px;
+        background: #fff;
+        z-index: 3;
+    }
+    .hero-content::before {
+        left: 30px;
+        right: 30px;
+        width: calc(100% + -60px);
+    }
+    .single-food span.stc-hover a {
+        padding: 0 10px;
+    }
+    .single-blog.featured-blog {
+        margin-bottom: 30px;
+    }
+    .footer-widget.mr-3 {
+        text-align: center!important;
+    }
+    
+/*    blog*/
+    .single-offer-banner {
+        margin-bottom: 30px;
+    }
+    
+/*    checkot*/
+    
+    .checkout-area select.form-control {
+        margin-bottom: 30px;
+    }
+    .shipping-information {
+        margin-bottom: 80px;
+    }    
+    
+/*    about*/
+    .member-photo {
+        margin: 30px 0;
+    }
+    .review-carousel {
+        padding: 0 0;
+    }
+    .review-carousel-thumbnail {
+        padding: 35px 35px 0;
+    }
+
+    
+}
+
+@media (max-width: 767px) {
+    .header-phone {
+        text-align: center;
+    }
+    .logo-wrap {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .header-acc-list {
+        margin-left: 12px;
+        margin-top: 22px;
+        padding-right: 0;
+    }
+    .header-acc-list .item-count {
+        top: -26px;
+    }
+    
+    .single-hero {
+        height: 460px;
+    }
+    .hero-content {
+        padding: 35px;
+    }
+    .hero-content:before {
+        display: none;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-content .boxed-btn {
+        height: 48px;
+        line-height: 48px;
+        min-width: 180px;
+        padding: 0 25px;
+        font-size: 20px;
+    }
+    .section-heading h3 {
+        line-height: 1.4;
+    }
+    .clockdiv {
+        text-align: center;
+    }
+    .clockdiv span {
+        width: 50px;
+        height: 50px;
+        font-size: 13px;
+        padding: 3px 0;
+    }
+    .trendy-foods-filtering .button-group button {
+        padding: 5px 15px;
+        margin: 7.5px 0;
+    }
+    .offers-area-full-wrap {
+        padding: 0 0;
+        border: 0;
+    }
+    .banner-content {
+        text-align: center;
+    }
+    .banner-content h3 {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    .banner-content h2 {
+        font-size: 32px;
+    }
+    .banner-content .boxed-btn {
+        height: 48px;
+        line-height: 48px;
+        min-width: 180px;
+        padding: 0 25px;
+        font-size: 20px;
+    }
+    .single-tr-bs-os {
+        margin-bottom: 80px;
+    }
+    div[class^=col-]:last-child .single-tr-bs-os {
+        margin-bottom: 0;
+    }
+    
+    
+    
+    
+    
+    
+/*    blog*/
+    .single-blog .blog-thumb .blog-thumb-bg {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .single-brand img {
+        margin: 0 auto;
+    }
+    .section-footer {
+        text-align: left!important;
+    }
+    .footer-top {
+        padding-bottom: 20px;
+    }
+    .footer-widget {
+        margin-bottom: 80px;
+    }
+    .footer-widget h6.title {
+        margin-bottom: 25px;
+    }
+    .footer-copyright p {
+        line-height: 2;
+    }
+    .footer-copyright .text-right {
+        text-align: left!important;
+    }
+    .footer-widget.mr-3 {
+        text-align: center!important;
+    }
+    .footer-copyright,
+    .footer-copyright .text-right {
+        text-align: center!important;
+    }
+    
+    
+    
+/*    cart*/
+    .table-shopping-cart select.form-control {
+        float: right;
+    }
+
+    
+        
+    
+    
+/*    checkout*/
+    .form-text span:last-child {
+        float: left !important;
+        text-align: left!important;
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }    
+
+}
+/*# sourceMappingURL=responsive.css.map */
