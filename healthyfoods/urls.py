@@ -35,6 +35,6 @@ urlpatterns = [
     url(r'^dairycart/', views.dairycart, name='dairycart'),
     url(r'^drinkcart/', views.drinkcart, name='drinkcart'),
     url(r'^drink/', views.drink, name='drink'),
-    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}),
+    url(r'^media/(?P<path>.*)$', serve,{'document_root': settings.MEDIA_ROOT}),
     url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
 ]
