@@ -13,8 +13,10 @@ vegetableslist=["Peas", "Broccoli", "Bell Peppers", "Beans", "Artichokes", "Lett
 fruitslist=["Apples", "Oranges", "Blueberries", "Strawberries", "Bananas", "Peaches", "Lemons", "Grapes"]
 dairylist=["Yogurt", "Cheese", "Milk", "Butter", "Sour Cream", "Eggs", "Ice Cream", "Sorbet"]
 drinkslist=["brown rice", "oats", "millet", "bread", "flour", "barley", "cereal", "wheat"]
+# import pscycopg2
 def getproducts():
 
+    # conn = psycopg2.connect(host="localhost", port=5432, database="HealthyFoods", user="postgres", password="postgres")
     conn = pyodbc.connect('Driver={SQL Server};'
                           'Server=DESKTOP-K4M6VPH\DATABASE_SQL;'
                           'Database=HealthyFoods;'
