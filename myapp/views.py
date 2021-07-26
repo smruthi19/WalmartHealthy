@@ -116,7 +116,7 @@ def getproducts():
 
 
 def getfruitproducts():
-
+    print("hi")
     conn = pyodbc.connect('Driver={SQL Server};'
                           'Server=DESKTOP-K4M6VPH\DATABASE_SQL;'
                           'Database=HealthyFoods;'
