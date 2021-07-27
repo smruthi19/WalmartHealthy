@@ -17,10 +17,7 @@ drinkslist=["brown rice", "oats", "millet", "bread", "flour", "barley", "cereal"
 def getproducts():
 
     # conn = psycopg2.connect(host="localhost", port=5432, database="HealthyFoods", user="postgres", password="postgres")
-    conn = pyodbc.connect('Driver={SQL Server};'
-                          'Server=eu-az-sql-serv1.database.windows.net;'
-                          'Database=dxqmzljmaafhea4;'
-                          'Trusted_Connection=yes;')
+    conn = pyodbc.connect('Server=tcp:eu-az-sql-serv1.database.windows.net,1433;Initial Catalog=dxqmzljmaafhea4;Persist Security Info=False;User ID=ux2opka8z95s1se;Password=Mi$S9m%Tp39JJ*J56D6Rou#&q;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;')
 
     cursor = conn.cursor()
     rows=cursor.execute('SELECT * FROM dxqmzljmaafhea4.dbo.food')
