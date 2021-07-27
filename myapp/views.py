@@ -23,7 +23,7 @@ def getproducts():
                           'Trusted_Connection=yes;')
 
     cursor = conn.cursor()
-    rows=cursor.execute('SELECT * FROM HealthyFoods.dbo.foods')
+    rows=cursor.execute('SELECT * FROM dxqmzljmaafhea4.dbo.food')
     # for row in rows:
     #     print(row)
     #print(list);
@@ -77,7 +77,7 @@ def getproducts():
     for product in organizedlist:
         product=product.strip()
     for vegetable in vegetableslist:
-        rows2=cursor.execute("Select Certifier_Name, Operation_Name, Physical_Address_Street_1, Physical_Address_City, Physical_Address_State_Province, Physical_Address_Country from HealthyFoods.dbo.Foods where Certified_Products_Under_Crops_Scope LIKE ?", ("%"+vegetable+"%",));
+        rows2=cursor.execute("Select Certifier_Name, Operation_Name, Physical_Address_Street_1, Physical_Address_City, Physical_Address_State_Province, Physical_Address_Country from dxqmzljmaafhea4.dbo.food where Certified_Products_Under_Crops_Scope LIKE ?", ("%"+vegetable+"%",));
         for row2 in rows2:
             if (row2[5]=="United States of America (the)"):
                 matches.update({'vegetable': vegetable})
@@ -118,12 +118,12 @@ def getproducts():
 def getfruitproducts():
     print("hi")
     conn = pyodbc.connect('Driver={SQL Server};'
-                          'Server=DESKTOP-K4M6VPH\DATABASE_SQL;'
-                          'Database=HealthyFoods;'
+                          'Server=eu-az-sql-serv1.database.windows.net;'
+                          'Database=dxqmzljmaafhea4;'
                           'Trusted_Connection=yes;')
 
     cursor = conn.cursor()
-    rows=cursor.execute('SELECT * FROM HealthyFoods.dbo.foods')
+    rows=cursor.execute('SELECT * FROM dxqmzljmaafhea4.dbo.food')
     # for row in rows:
     #     print(row)
     #print(list);
@@ -177,7 +177,7 @@ def getfruitproducts():
     for product in organizedlist:
         product=product.strip()
     for fruit in fruitslist:
-        rows2=cursor.execute("Select Certifier_Name, Operation_Name, Physical_Address_Street_1, Physical_Address_City, Physical_Address_State_Province, Physical_Address_Country from HealthyFoods.dbo.Foods where Certified_Products_Under_Crops_Scope LIKE ?", ("%"+fruit+"%",));
+        rows2=cursor.execute("Select Certifier_Name, Operation_Name, Physical_Address_Street_1, Physical_Address_City, Physical_Address_State_Province, Physical_Address_Country from dxqmzljmaafhea4.dbo.food where Certified_Products_Under_Crops_Scope LIKE ?", ("%"+fruit+"%",));
         for row2 in rows2:
             if (row2[5]=="United States of America (the)"):
                 matches.update({'fruit': fruit})
@@ -217,12 +217,12 @@ def getfruitproducts():
 def getdrinkproducts():
 
     conn = pyodbc.connect('Driver={SQL Server};'
-                          'Server=DESKTOP-K4M6VPH\DATABASE_SQL;'
-                          'Database=HealthyFoods;'
+                          'Server=eu-az-sql-serv1.database.windows.net;'
+                          'Database=dxqmzljmaafhea4;'
                           'Trusted_Connection=yes;')
 
     cursor = conn.cursor()
-    rows=cursor.execute('SELECT * FROM HealthyFoods.dbo.foods')
+    rows=cursor.execute('SELECT * FROM dxqmzljmaafhea4.dbo.food')
     # for row in rows:
     #     print(row)
     #print(list);
@@ -276,7 +276,7 @@ def getdrinkproducts():
     for product in organizedlist:
         product=product.strip()
     for drink in drinkslist:
-        rows2=cursor.execute("Select Certifier_Name, Operation_Name, Physical_Address_Street_1, Physical_Address_City, Physical_Address_State_Province, Physical_Address_Country from HealthyFoods.dbo.Foods where Certified_Products_Under_Crops_Scope LIKE ?", ("%"+drink+"%",));
+        rows2=cursor.execute("Select Certifier_Name, Operation_Name, Physical_Address_Street_1, Physical_Address_City, Physical_Address_State_Province, Physical_Address_Country from dxqmzljmaafhea4.dbo.food where Certified_Products_Under_Crops_Scope LIKE ?", ("%"+drink+"%",));
         for row2 in rows2:
             if (row2[5]=="United States of America (the)"):
                 matches.update({'drink': drink})
@@ -312,12 +312,12 @@ def getdrinkproducts():
 def getdairyproducts():
 
     conn = pyodbc.connect('Driver={SQL Server};'
-                          'Server=DESKTOP-K4M6VPH\DATABASE_SQL;'
-                          'Database=HealthyFoods;'
+                          'Server=eu-az-sql-serv1.database.windows.net;'
+                          'Database=dxqmzljmaafhea4;'
                           'Trusted_Connection=yes;')
 
     cursor = conn.cursor()
-    rows=cursor.execute('SELECT * FROM HealthyFoods.dbo.foods')
+    rows=cursor.execute('SELECT * FROM dxqmzljmaafhea4.dbo.food')
     # for row in rows:
     #     print(row)
     #print(list);
@@ -373,7 +373,7 @@ def getdairyproducts():
         print(dairylist )
     for dairy in dairylist:
         print(dairy)
-        rows2=cursor.execute("Select Certifier_Name, Operation_Name, Physical_Address_Street_1, Physical_Address_City, Physical_Address_State_Province, Physical_Address_Country from HealthyFoods.dbo.Foods where Certified_Products_Under_Crops_Scope LIKE ?", ("%"+dairy+"%",));
+        rows2=cursor.execute("Select Certifier_Name, Operation_Name, Physical_Address_Street_1, Physical_Address_City, Physical_Address_State_Province, Physical_Address_Country from dxqmzljmaafhea4.dbo.food where Certified_Products_Under_Crops_Scope LIKE ?", ("%"+dairy+"%",));
         for row2 in rows2:
             if (row2[5]=="United States of America (the)"):
                 matches.update({'dairy': dairy})
