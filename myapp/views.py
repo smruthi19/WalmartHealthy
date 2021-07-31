@@ -20,8 +20,8 @@ def getproducts():
     conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
                           'Server=eu-az-sql-serv1.database.windows.net;'
                           'Database=dxqmzljmaafhea4;'
-                          'Trusted_Connection=yes;'
-                        
+                          'Trusted_Connection=no;'
+
 )
 
     cursor = conn.cursor()
