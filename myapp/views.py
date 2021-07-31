@@ -118,10 +118,12 @@ def getproducts():
 
 def getfruitproducts():
     print("hi")
-    conn = pyodbc.connect('Driver={SQL Server};'
+    conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
                           'Server=eu-az-sql-serv1.database.windows.net;'
                           'Database=dxqmzljmaafhea4;'
-                          'Trusted_Connection=yes;')
+                          'Trusted_Connection=no;'
+                          'UID=ux2opka8z95s1se;'
+                          'PWD=Mi$S9m%Tp39JJ*J56D6Rou#&q;'
 
     cursor = conn.cursor()
     rows=cursor.execute('SELECT * FROM dxqmzljmaafhea4.dbo.food')
@@ -217,11 +219,12 @@ def getfruitproducts():
 
 def getdrinkproducts():
 
-    conn = pyodbc.connect('Driver={SQL Server};'
+    conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
                           'Server=eu-az-sql-serv1.database.windows.net;'
                           'Database=dxqmzljmaafhea4;'
-                          'Trusted_Connection=yes;')
-
+                          'Trusted_Connection=no;'
+                          'UID=ux2opka8z95s1se;'
+                          'PWD=Mi$S9m%Tp39JJ*J56D6Rou#&q;'
     cursor = conn.cursor()
     rows=cursor.execute('SELECT * FROM dxqmzljmaafhea4.dbo.food')
     # for row in rows:
@@ -312,11 +315,12 @@ def getdrinkproducts():
     return dictionarylist
 def getdairyproducts():
 
-    conn = pyodbc.connect('Driver={SQL Server};'
-                          'Server=eu-az-sql-serv1.database.windows.net;'
-                          'Database=dxqmzljmaafhea4;'
-                          'Trusted_Connection=yes;')
-
+conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
+                      'Server=eu-az-sql-serv1.database.windows.net;'
+                      'Database=dxqmzljmaafhea4;'
+                      'Trusted_Connection=no;'
+                      'UID=ux2opka8z95s1se;'
+                      'PWD=Mi$S9m%Tp39JJ*J56D6Rou#&q;'
     cursor = conn.cursor()
     rows=cursor.execute('SELECT * FROM dxqmzljmaafhea4.dbo.food')
     # for row in rows:
