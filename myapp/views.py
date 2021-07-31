@@ -27,9 +27,7 @@ def getproducts():
 
     cursor = conn.cursor()
     rows=cursor.execute('SELECT * FROM dxqmzljmaafhea4.dbo.food')
-    # for row in rows:
-    #     print(row)
-    #print(list);
+
 
     columns = [column[0] for column in rows.description]
     #print(columns)
