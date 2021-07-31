@@ -17,7 +17,7 @@ drinkslist=["brown rice", "oats", "millet", "bread", "flour", "barley", "cereal"
 def getproducts():
 
     # conn = psycopg2.connect(host="localhost", port=5432, database="HealthyFoods", user="postgres", password="postgres")
-    conn = pyodbc.connect('Driver={SQL SERVER};'
+    conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
                           'Server=eu-az-sql-serv1.database.windows.net;'
                           'Database=dxqmzljmaafhea4;'
                           'Trusted_Connection=yes;')
