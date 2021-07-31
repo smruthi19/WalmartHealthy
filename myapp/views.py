@@ -124,7 +124,7 @@ def getfruitproducts():
                           'Trusted_Connection=no;'
                           'UID=ux2opka8z95s1se;'
                           'PWD=Mi$S9m%Tp39JJ*J56D6Rou#&q;'
-
+)
     cursor = conn.cursor()
     rows=cursor.execute('SELECT * FROM dxqmzljmaafhea4.dbo.food')
     # for row in rows:
@@ -225,6 +225,7 @@ def getdrinkproducts():
                           'Trusted_Connection=no;'
                           'UID=ux2opka8z95s1se;'
                           'PWD=Mi$S9m%Tp39JJ*J56D6Rou#&q;'
+                )
     cursor = conn.cursor()
     rows=cursor.execute('SELECT * FROM dxqmzljmaafhea4.dbo.food')
     # for row in rows:
@@ -321,6 +322,8 @@ conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};'
                       'Trusted_Connection=no;'
                       'UID=ux2opka8z95s1se;'
                       'PWD=Mi$S9m%Tp39JJ*J56D6Rou#&q;'
+
+                      )
     cursor = conn.cursor()
     rows=cursor.execute('SELECT * FROM dxqmzljmaafhea4.dbo.food')
     # for row in rows:
@@ -591,6 +594,6 @@ def category(request):
         # results = search.get_dict()
         # # if (results['search_metadata']['original']!=None):
         # imagelist.append(results['images_results'][3]['original'])
-        
+
 
     return render (request,'category.html', {'updatedproducts': updatedproducts, 'imagelist':imagelist, 'updatedfruitproducts': updatedfruitproducts})
