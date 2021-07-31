@@ -574,13 +574,7 @@ def category(request):
     #     }
     #
     #     search = GoogleSearch(params)
-    #     results = search.get_dict()
-    #     print(results)
-        # if (results['search_metadata']['original']!=None):
-        # imagelist.append(results['images_results'][3]['original'])
-        # print(imagelist)
-        # print("imagelist")
-
+    #
 
     # for fruit in fruitslist:
         # params = {
