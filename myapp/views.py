@@ -21,8 +21,8 @@ def getproducts():
                           'Server=eu-az-sql-serv1.database.windows.net;'
                           'Database=dxqmzljmaafhea4;'
                           'Trusted_Connection=yes;'
-                          'username=ux2opka8z95s1se';
-                          'password=Mi$S9m%Tp39JJ*J56D6Rou#&q';
+                          'username=ux2opka8z95s1se;'
+                          'password=Mi$S9m%Tp39JJ*J56D6Rou#&q;'
 )
 
     cursor = conn.cursor()
