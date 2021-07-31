@@ -591,9 +591,7 @@ def category(request):
         # }
         #
         # search = GoogleSearch(params)
-        # results = search.get_dict()
-        # # if (results['search_metadata']['original']!=None):
-        # imagelist.append(results['images_results'][3]['original'])
+
 
 
     return render (request,'category.html', {'updatedproducts': updatedproducts, 'imagelist':imagelist, 'updatedfruitproducts': updatedfruitproducts})
