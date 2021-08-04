@@ -288,7 +288,7 @@
                                  var tempimage="image" + (index+1);
                                    var imageurl=fruitlist[index]["drink"];
                                      console.log(imageurl);
-                                   image.src="/static/img/trendy-foods/" + imageurl+ ".jpg";
+                                   image.src= image.src="/static/img/icon/" + imageurl + ".jpg"
                                  //
                                  document.getElementById(tempimage).appendChild(image);
 
@@ -388,7 +388,7 @@
 
 
                                                     <script>
-                                                    
+
                                                     sessionStorage.setItem("price", document.getElementById("price2").innerHTML);
 
                                                     </script>
