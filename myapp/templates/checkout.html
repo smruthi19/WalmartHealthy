@@ -154,12 +154,14 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link cat" data-toggle="dropdown" href="#" aria-expanded="false"><strong>&nbsp; Shop By Category</strong></a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Foods and Drink</a>
-                            <a class="dropdown-item" href="#">Fresh Meat</a>
-                            <a class="dropdown-item" href="#">Sea Fishes</a>
-                            <a class="dropdown-item" href="#">Butter &amp; Eggs</a>
-                            <a class="dropdown-item" href="#">Fruits</a>
-                            <a class="dropdown-item" href="#">Frozen Foods</a>
+                          <div class="dropdown-menu">
+                              <a class="dropdown-item" href="{% url 'category' %}">Vegetables</a>
+                              <a class="dropdown-item" href="{% url 'fruits' %}">Fruits</a>
+                              <a class="dropdown-item" href="{% url 'dairy' %}">Dairy</a>
+                              <a class="dropdown-item" href="{% url 'drink' %}">Grains</a>
+                              <!-- <a class="dropdown-item" href="#">Fruits</a>
+                              <a class="dropdown-item" href="#">Frozen Foods</a> -->
+                          </div>
                         </div>
                     </li>
                     <li class="nav-item">

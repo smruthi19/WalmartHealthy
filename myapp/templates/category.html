@@ -41,11 +41,12 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-6">
                         <div class="header-phone">
-                            <p><i class="fa fa-phone"></i> Call us: <a href="tel:+01900220033">+01900220033</a></p>
+                            <p><i class="fa fa-phone"></i> Call us: <a href="tel:+1-800-925-6278
+">+1-800-925-6278</a></p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 text-center text-lg-right text-xl-right">
-                        <div class="language-currency">
+                        <!-- <div class="language-currency">
                             <ul>
                                 <li class="currency"><a href="#"> Currency <i class="fa fa-caret-down"></i></a>
                                     <ul class="dropdown-currency">
@@ -62,7 +63,7 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -73,24 +74,21 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-md-4">
                         <div class="logo-wrap">
-                            <a href="index.html"><img src="/static/img/logo/logo.png" alt=""></a>
+                            <a href="index.html"><img src="/static/img/icon/Walmart_logo_transparent.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-8 text-center">
-                        <div class="search-box">
-                            <input type="text" placeholder="Search for product">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </div>
+
                     </div>
                     <div class="col-lg-4 col-md-4 col-4 text-right">
-                        <div class="header-acc-wrap">
+                        <!-- <div class="header-acc-wrap">
                             <div class="header-acc-list header-wishlist">
                                 <a href="wishlist.html"><span class=""><img src="/static/img/icon/like.png" alt=""></span><span class="item-count">3</span></a>
                             </div>
                             <div class="header-acc-list  header-cart">
                                 <a href="cart.html"><span class=""><img src="/static/img/icon/cart.png" alt=""></span><span class="item-count">2</span></a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -155,11 +153,14 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link cat" data-toggle="dropdown" href="#" aria-expanded="false"><strong>&nbsp; Shop By Category</strong></a>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="{% url 'category' %}">Vegetables</a>
-                          <a class="dropdown-item" href="{% url 'fruits' %}">Fruits</a>
-                          <a class="dropdown-item" href="{% url 'dairy' %}">Dairy</a>
-                          <a class="dropdown-item" href="#">Meats</a>
-                          <a class="dropdown-item" href="#">Drinks</a>
+                          <div class="dropdown-menu">
+                              <a class="dropdown-item" href="{% url 'category' %}">Vegetables</a>
+                              <a class="dropdown-item" href="{% url 'fruits' %}">Fruits</a>
+                              <a class="dropdown-item" href="{% url 'dairy' %}">Dairy</a>
+                              <a class="dropdown-item" href="{% url 'drink' %}">Grains</a>
+                              <!-- <a class="dropdown-item" href="#">Fruits</a>
+                              <a class="dropdown-item" href="#">Frozen Foods</a> -->
+                          </div>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -240,7 +241,7 @@
                             var tempimage="image" + (index+1);
                               var imageurl=(productlist[index]["vegetable"]);
                                 console.log(tempimage);
-                              image.src="/static/img/icon/" + imageurl + ".jpg"
+                              image.src="/static/img/icon/" + imageurl + ".png"
                             //
                             document.getElementById(tempimage).appendChild(image);
                             //   // document.getElementById(temp).width="50";
@@ -342,7 +343,10 @@
                                                   <div id = "text1"> </div>
                                                 </a>
                                                 <div class="price-wrap mt-2">
-                                                    <span class="price">$4.50</span>
+                                                    <span class="price" id="price1">$4.50</span>
+                                                    <script>
+                                                    sessionStorage.setItem("price", document.getElementById("price1").innerHTML);
+                                                    </script>
                                                     <del class="price-old">$4.75</del>
                                                 </div>
                                                   <p> 1 lb bag </p>
@@ -1418,7 +1422,7 @@
                    <div class="row">
                        <aside class="col-lg-4 col-md-12 mb-md-5 mb-sm-3 pl-md-5 pr-md-5">
                            <article class="footer-widget mr-3">
-                               <img src="static/img/logo/logo.png" class="footer-logo mb-3">
+                               <img src="static/img/icon/Walmart_logo_transparent.png" class="footer-logo mb-3">
                                <!-- <p class="mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dumm</p> -->
                                <div class="footer-social">
                                    <h4 class="mb-3 mt-4">Follow Us</h4>

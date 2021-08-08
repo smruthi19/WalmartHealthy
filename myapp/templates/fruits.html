@@ -44,24 +44,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 text-center text-lg-right text-xl-right">
-                        <div class="language-currency">
-                            <ul>
-                                <li class="currency"><a href="#"> Currency <i class="fa fa-caret-down"></i></a>
-                                    <ul class="dropdown-currency">
-                                        <li><a href="#">€ Euro</a></li>
-                                        <li><a href="#">£ Pound Sterling</a></li>
-                                        <li><a href="#">$ US Dollar</a></li>
-                                    </ul>
-                                </li>
-                                <li class="language"><a href="#"> Language <i class="fa fa-caret-down"></i></a>
-                                    <ul class="dropdown-language">
-                                        <li><a href="#">French</a></li>
-                                        <li><a href="#">Spanish</a></li>
-                                        <li><a href="#">Russian</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
+                
                     </div>
                 </div>
             </div>
@@ -152,12 +135,11 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link cat" data-toggle="dropdown" href="#" aria-expanded="false"><strong>&nbsp; Shop By Category</strong></a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Vegetables</a>
-                            <a class="dropdown-item" href="#">Fruits</a>
-                            <a class="dropdown-item" href="#">Sea Fishes</a>
-                            <a class="dropdown-item" href="#">Butter &amp; Eggs</a>
-                            <a class="dropdown-item" href="#">Fruits</a>
-                            <a class="dropdown-item" href="#">Frozen Foods</a>
+                          <a class="dropdown-item" href="{% url 'category' %}">Vegetables</a>
+                          <a class="dropdown-item" href="{% url 'fruits' %}">Fruits</a>
+                          <a class="dropdown-item" href="{% url 'dairy' %}">Dairy</a>
+                          <a class="dropdown-item" href="{% url 'drink' %}">Grains</a>
+
                         </div>
                     </li>
                     <li class="nav-item">
@@ -298,7 +280,7 @@
                                  var tempimage="image" + (index+1);
                                    var imageurl=dairylist[index]["fruit"];
                                      console.log(imageurl);
-                                   image.src= image.src="/static/img/icon/" + imageurl + ".jpg"
+                                   image.src= "/static/img/icon/" + imageurl + ".jpg"
                                  //
                                  document.getElementById(tempimage).appendChild(image);
 
@@ -780,7 +762,7 @@
                                    <ul class="list-unstyled">
                                        <li> <a href="{% url 'index' %}">Home</a></li>
                                        <li> <a href="#">Product</a></li>
-                                       <!-- <li> <a href="#">Contact</a></li> -->
+                                       <li> <a href="#">Contact</a></li>
                                        <li> <a href="#">Blogs</a></li>
                                        <li> <a href="#">Login</a></li>
                                    </ul>

@@ -25,7 +25,7 @@ SECRET_KEY = '$$q8ohv%tp9+%9-di!$z6o=0+y6inxzpo$fn%!hp0-qb=c8aju'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['walmarthealthy.herokuapp.com']
+ALLOWED_HOSTS = ['walmarthealthy.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
